@@ -22,11 +22,11 @@ $(window).resize(function () {
     if ($(window).width() < 420) {
         $('#mainNavBar').removeClass('btn-group');
         $('#mainNavBar').addClass('btn-group-vertical');
-       
+
     } else {
         $('#mainNavBar').addClass('btn-group');
         $('#mainNavBar').removeClass('btn-group-vertical');
-        
+
     }
 
 });
@@ -55,6 +55,7 @@ function makeVapor() {
     vapor = true;
     $(`#fiji`).off(`click`, makeVapor);
     $('#myface').attr(`src`, "/assets/img/ja-glitch.png")
+    $("#brand").html("Ｍ． ＭＩＣＨＴ▲");
     $("body").addClass("body-alt");
     $("nav").toggleClass("bg-light nav-alt");
     $("a.nav-item").toggleClass("btn-outline-secondary btn-outline-primary ");
@@ -67,6 +68,7 @@ function makeBoring() {
     vapor = false;
     $(`#fiji`).off(`click`, makeBoring);
     $('#myface').attr(`src`, "/assets/img/ja1.jpg")
+    $("#brand").html("M. Michta");
     $("body").removeClass("body-alt");
     $("nav").toggleClass("bg-light nav-alt");
     $("a.nav-item").toggleClass("btn-outline-secondary btn-outline-primary ");
