@@ -22,10 +22,13 @@ $(window).resize(function () {
     if ($(window).width() < 420) {
         $('#mainNavBar').removeClass('btn-group');
         $('#mainNavBar').addClass('btn-group-vertical');
+       
     } else {
         $('#mainNavBar').addClass('btn-group');
         $('#mainNavBar').removeClass('btn-group-vertical');
+        
     }
+
 });
 
 
@@ -39,9 +42,38 @@ async function getCorgi() {
 
 async function replaceImg() {
     $('.img-fluid').each(async function () {
-        let doggo = await getCorgi()
+        let doggo = "await getCorgi()"
         $(this).attr(`src`, doggo)
     })
 }
 
-$(`#corgi-head`).on(`click`, replaceImg);
+/* Vaporwave */
+
+let vapor = false;
+
+function makeVapor() {
+    vapor = true;
+    $(`#fiji`).off(`click`, makeVapor);
+    $('#myface').attr(`src`, "/assets/img/ja-glitch.png")
+    $("body").addClass("body-alt");
+    $("nav").toggleClass("bg-light nav-alt");
+    $("a.nav-item").toggleClass("btn-outline-secondary btn-outline-primary ");
+    $(".footer").toggleClass("bg-light footer-alt");
+    $(`#fiji`).on(`click`, makeBoring);
+
+}
+
+function makeBoring() {
+    vapor = false;
+    $(`#fiji`).off(`click`, makeBoring);
+    $('#myface').attr(`src`, "/assets/img/ja1.jpg")
+    $("body").removeClass("body-alt");
+    $("nav").toggleClass("bg-light nav-alt");
+    $("a.nav-item").toggleClass("btn-outline-secondary btn-outline-primary ");
+    $(".footer").toggleClass("bg-light footer-alt");
+    $(`#fiji`).on(`click`, makeVapor);
+}
+
+
+//$(`#fiji`).on(`click`, replaceImg);
+$(`#fiji`).on(`click`, makeVapor);

@@ -1,8 +1,10 @@
 $body-bg: #f5f5f5;
 $primary:#162d50;
+$secondary: #7500d4;
 $light: #e2dfdf;
 $zindex-fixed: 1030 !default;
-#corgi-head {
+$enable-gradients: true;
+#fiji {
     height: 50px;
     position: fixed;
     bottom: 10px;
@@ -38,6 +40,24 @@ body {
 .fill {
     min-height: 100vh;
     padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.body-alt {
+    background: linear-gradient(90deg, #ffb2e5, #ffd8df96);
+    font-family: Lucida Console, Courier, monospace;
+}
+
+.nav-alt {
+    background: linear-gradient(90deg, #f59cd7ec, #83f1ffe1);
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+
+.footer-alt{
+    background: linear-gradient(90deg, #83f1ff00,#9cdcf5c2);
+    
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";
