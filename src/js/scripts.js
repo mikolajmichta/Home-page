@@ -22,7 +22,8 @@ $(window).resize(function () {
     if ($(window).width() < 420) {
         $('#mainNavBar').removeClass('btn-group');
         $('#mainNavBar').addClass('btn-group-vertical');
-
+        $('#ext-links').removeClass('flex-column');
+        
     } else {
         $('#mainNavBar').addClass('btn-group');
         $('#mainNavBar').removeClass('btn-group-vertical');

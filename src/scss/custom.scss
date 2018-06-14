@@ -13,6 +13,10 @@ $enable-gradients: true;
     z-index: $zindex-fixed;
 }
 
+#ext-links{
+    font-size: 50px;
+}
+
 html {
     position: relative;
     /* min-height: 100vh; */
