@@ -13,7 +13,7 @@ $enable-gradients: true;
     z-index: $zindex-fixed;
 }
 
-#ext-links{
+#ext-links {
     font-size: 50px;
 }
 
@@ -27,7 +27,7 @@ body {
     /* Margin bottom by footer height */
 }
 
-img{
+img {
     border-radius: 5px;
 }
 
@@ -37,11 +37,12 @@ img{
 
 .footer {
     position: absolute;
+    font-size: 12px;
     bottom: 0;
     width: 100%;
     height: 65px;
     /* Set the fixed height of the footer here */
-    line-height: 65px;
+    line-height: 30px;
     /* Vertically center the text there */
 }
 

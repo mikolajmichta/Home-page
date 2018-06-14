@@ -67,7 +67,7 @@ function makeVapor() {
     $("a.nav-item").toggleClass("btn-outline-secondary btn-outline-primary ");
     $(".footer").toggleClass("bg-light footer-alt");
     $(`#fiji`).on(`click`, makeBoring);
-    
+
 }
 
 function makeBoring() {
@@ -80,7 +80,7 @@ function makeBoring() {
     $("a.nav-item").toggleClass("btn-outline-secondary btn-outline-primary ");
     $(".footer").toggleClass("bg-light footer-alt");
     $(`#fiji`).on(`click`, makeVapor);
-   
+
 }
 
 
