@@ -4,6 +4,11 @@ $secondary: #7500d4;
 $light: #e2dfdf;
 $zindex-fixed: 1030 !default;
 $enable-gradients: true;
+
+article a {
+    text-decoration: underline;
+}
+
 #fiji {
     height: 50px;
     position: fixed;
